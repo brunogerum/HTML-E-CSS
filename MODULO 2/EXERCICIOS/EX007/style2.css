@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{/*tag a oara muda ros links*/
+    color: rgb(0, 173, 38);
+    text-decoration: none;/*para tirar o sublinhado dos links*/
+    font-weight: bold;
+}
+
+a:visited{ /* quando o link for visitado ou ja clicado*/
+    color: brown;
+}
+
+a:hover{
+    color: rgb(192, 3, 192);
+    text-decoration: underline;
+}
+
+a:active{
+    color: yellow;
+}
+
+a::after{/*pseudo elementos usando 2 2pontos (::)*/
+    content: ' ✍[link]';
+    text-decoration: none;
+    font-weight: normal;
+    color:darkgrey
+}

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+div{
+    display: inline-block; /* colcoar tudo na mesma linha*/
+    background-color: darkgray;
+    text-align: center;
+    border: 1px solid black;
+    height: 150px; /*altura*/
+    width: 150px; /*largura*/
+}
+
+/* : (dois pontos) são uma pseudo clase, tem que estar relacionadas a a um elemento ou uma classe.
+são relacionadas ao estado de um determinado elemento, como por exemplo, se ele estiver ativo, ou marcado, ou vazio, habilitado etc*/
+
+div:hover{ /* hover é quando passa o mouse por cima  */
+background-color: yellowgreen;
+}
+
+div > p{ /* o simbolo de maior significa que ele so vai mexer no paragrafo dentro de uma div*/
+    display: none; /*significa que quando bota essa opçao é pra nao mostrar nada*/
+    color: white;
+    background-color: red;
+    width: 120px;
+}
+
+div:hover > p{
+    display:block; /*é pra mostrar , ao contratio do none*/
+
+
+}

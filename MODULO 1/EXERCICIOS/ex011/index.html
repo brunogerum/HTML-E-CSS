@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir em varios formatos e tamanhos diferentes</p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>reproduzir audios no html usando a tag audio e depois do link usar o parametro controls e autoplay, formatos mais aceitos sao <strong>MP3 WAV e OGG</strong></p>
+    <audio src="midia/lasgo - better off alone.mp3" controls autoplay loop></audio>
+    <p>outra forma de reproduzir audio</p>
+    <audio controls autoplay preload="auto">
+        <source src="midia/Believe.mp3" type="audio/mpeg">
+        <source src="" type="">
+    </audio>    
+</body>
+</html>
