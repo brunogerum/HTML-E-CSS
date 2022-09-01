@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url(IMAGENS/target001.png);
+            background-size: 100% 100%;
+            height: 500px;
+            padding: 10px;
+            height: 94vh;/*viewport = a tela que estamos vendo*/
+            background-color: purple;
+            position: relative; /* por padrao sempre vem configurado esse*/
+        }
+
+        #conteudo{
+            background-image: url(IMAGENS/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;/*pode mexer na altura e largura*/
+            height: 200px;
+            width: 300px;
+            background-color: yellow;
+            
+
+            left: 50%;   /*centralizar o conteudo, fazer o left o top e o transform*/
+            top: 50%;
+
+            transform: translate(-50%, -50%); /* transform serve para mexer em caixa alterar de varias formas*/
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
