@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio e Check Box</title>
+</head>
+<body>
+    <h1>Radio button e check box</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Esporte Favorito</legend>
+    
+            <input type="checkbox" name="fut" id="ifut">
+            <label for="ifut">Futebol</label><br>
+    
+            <input type="checkbox" name="vol" id="ivol">
+            <label for="ivol">Volei</label><br>
+    
+            <input type="checkbox" name="nat" id="inat">
+            <label for="inat">natação'</label><br>
+    
+            <input type="checkbox" name="bas" id="ibas">
+            <label for="ibas">Basquete</label><br>
+           </fieldset>
+
+       <fieldset>
+        <legend>Estado Civil</legend>
+        <!--TODOS TEM QUE TER O MESMO NAME, PARA NAO FICAR COM MULTIPLA MARCAÇÃO-->
+
+        <input type="radio" name="civil" id="isolt">
+        <label for="isolt">Solteiro</label><br>
+
+        <input type="radio" name="civil" id="icas">
+        <label for="icas">Casado</label><br>
+
+        <input type="radio" name="civil" id="idivor">
+        <label for="idivor">Divorciado</label><br>
+
+        <input type="radio" name="civil" id="iviuvo">
+        <label for="iviuvo">Viuvo</label><br>
+       </fieldset>
+        <br>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    
+</body>
+</html>
