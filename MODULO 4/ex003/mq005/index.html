@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body onresize="mudou()">
+    <header>
+        <h1>
+            Meu Site
+        </h1> 
+        <i  id="burguer" class="material-icons" onclick="clickMenu()">
+            menu
+        </i>
+        <menu id="item">
+        <a href="#">Opção 1</a>
+        <a href="#">Opção 2</a>
+        <a href="#">Opção 3</a>
+        <a href="#">Opção 4</a>
+        <a href="#">Opção 5</a>
+        <a href="#">Opção 6</a>
+
+    </menu>
+    </header>
+   
+    <main>
+        <h2>Testando Media Queries</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem impedit molestias accusamus obcaecati magnam repellat sit esse ullam deleniti! Sapiente harum, non odit fugit tempora corporis qui a repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste eveniet ullam harum, accusamus at voluptates necessitatibus quam repellat sint ipsum, amet reprehenderit cumque veniam nobis. Labore dicta sapiente cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem et dolores accusantium voluptas nemo nisi ad, ducimus tenetur doloremque laudantium amet consequuntur nam error dignissimos facilis maxime ipsam quo?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem impedit molestias accusamus obcaecati magnam repellat sit esse ullam deleniti! Sapiente harum, non odit fugit tempora corporis qui a repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste eveniet ullam harum, accusamus at voluptates necessitatibus quam repellat sint ipsum, amet reprehenderit cumque veniam nobis. Labore dicta sapiente cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem et dolores accusantium voluptas nemo nisi ad, ducimus tenetur doloremque laudantium amet consequuntur nam error dignissimos facilis maxime ipsam quo?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem impedit molestias accusamus obcaecati magnam repellat sit esse ullam deleniti! Sapiente harum, non odit fugit tempora corporis qui a repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste eveniet ullam harum, a ipsam quo?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem impedit molestias accusamus obcaecati magnam repellat sit esse ullam deleniti! Sapiente harum, non odit fugit tempora corporis qui a repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iste eveniet ullam harum, accusamus at voluptates necessitatibus quam repellat sint ipsum, amet reprehenderit cumque veniam nobis. Labore dicta sapiente cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem et dolores accusantium voluptas nemo nisi ad, ducimus tenetur doloremque laudantium amet consequuntur nam error dignissimos facilis maxime ipsam quo?</p>
+        
+    </main>
+</body>
+<script>
+    function mudou() {
+        if(window.innerWidth >=768){
+            item.style.display = 'block'
+        } else{
+            item.style.display = 'none'
+        }
+    }
+
+    function clickMenu() {
+
+        if (item.style.display == 'block') {
+        item.style.display = 'none'
+    } else { 
+        item.style.display = 'block'
+    }
+    }
+</script>
+</html>

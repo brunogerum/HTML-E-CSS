@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*mobile first*/
+
+/* Tipicals Device Breakpoints
+Pequenas telas ate 600px
+celular de 600px ate 768px
+tablet 768px ate 992px
+desktop 992px ate 1200px
+grandes telas acima de 1200px
+*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    
+    height: 100vh;
+}
+
+body{
+    background: black url(../imagens/back-phone.jpg) no-repeat center center ;
+    background-size: cover;
+    
+}
+
+main{
+    background-color:  rgba(255, 255, 255, 0.781);
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+#tab, #imp, #pc, #tv{
+    display: none;
+}
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg);} /*não imprime, desnecessário*/
+    #tel, #tab, #pc, #tv{
+        display: none;
+        }
+        #imp{
+            display: block;
+        }
+        main{
+            border: 2px solid black;
+        }
+
+        main::after{
+            
+            content:  'Impressao feita para testes';
+            text-align: center;
+            text-decoration: overline;
+            width: 90vh;
+            
+        }
+        
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+body {
+background-image: url(../imagens/back-tablet.jpg);
+}
+#tel, #imp, #pc, #tv{
+    display: none;
+}
+#tab{
+    display: block;
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #tel, #imp, #tab, #tv{
+        display: none;
+    }
+    #pc{
+        display: block;}
+    }
+
+@media screen and (min-width: 1200px)  {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+    #tel, #imp, #pc, #tab{
+        display: none;
+    }
+    #tv{
+        display: block;}
+    }
